@@ -1,0 +1,120 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{amini2020deep}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AA}{%
+         family={Amini},
+         familyi={A\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Schwarting},
+         familyi={S\bibinitperiod},
+         given={Wilko},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Soleimany},
+         familyi={S\bibinitperiod},
+         given={Ava},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rus},
+         familyi={R\bibinitperiod},
+         given={Daniela},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AASWSARD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{11}
+    \field{title}{Deep {{Evidential Regression}}}
+    \field{year}{2020}
+  \endentry
+
+  \entry{bishop2006pattern}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BCM}{%
+         family={Bishop},
+         familyi={B\bibinitperiod},
+         given={Christopher\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer}}%
+    }
+    \strng{namehash}{BCM1}
+    \strng{fullhash}{BCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{series}{Information Science and Statistics}
+    \field{title}{Pattern Recognition and Machine Learning}
+    \field{year}{2006}
+  \endentry
+
+  \entry{sensoy2018evidential}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SM}{%
+         family={Sensoy},
+         familyi={S\bibinitperiod},
+         given={Murat},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kaplan},
+         familyi={K\bibinitperiod},
+         given={Lance},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kandemir},
+         familyi={K\bibinitperiod},
+         given={Melih},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMKLKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{11}
+    \field{title}{Evidential {{Deep Learning}} to {{Quantify Classification
+  Uncertainty}}}
+    \field{year}{2018}
+  \endentry
+\enddatalist
+\endinput

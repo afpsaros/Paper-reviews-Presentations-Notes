@@ -1,0 +1,116 @@
+\include{template}
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\bw}{\boldsymbol{w}}
+\newcommand{\bp}{\boldsymbol{p}}
+\newcommand{\bth}{\boldsymbol{\theta}}
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\cH}{\pazocal{H}}
+\newcommand{\cN}{\pazocal{N}}
+\newcommand{\cP}{\pazocal{P}}
+\newcommand{\cD}{\pazocal{D}}
+\newcommand{\cO}{\pazocal{O}}
+\newcommand{\cL}{\pazocal{L}}
+
+
+\setcounter{tocdepth}{3}
+\begin{document}
+	
+	\sloppy
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{center}	
+		\Large
+		\textbf{Dropout as variational inference}\\
+		\large
+		Apostolos Psaros\\	
+%		\today
+%		July 10, 2020
+	\end{center}
+	\vskip 0.25in
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{\footnotesize
+%\setlength{\parskip}{0.1em}
+%\linespread{0.1}
+%\tableofcontents
+%\newpage}
+
+
+%\setlength{\parskip}{1em}
+%\linespread{1.6}
+\section{Forward pass with dropout}
+Consider a NN with a single hidden layer. 
+The hidden layer weights and biases are $\boldsymbol{m}_1$ and $\boldsymbol{b}$, respectively.
+These are vectors of size $K$, the width of the layer.
+The output weights are $\boldsymbol{m}_2$, also of size $K$. 
+For doing a forward pass with dropout we sample a vector $\hat{\boldsymbol{\epsilon}} \sim p(\boldsymbol{\epsilon})$ of dimension $K$. 
+The elements of $\hat{\boldsymbol{\epsilon}}$ take value $0$ with probability $0 \leq p \leq 1$. 
+Given the output of the hidden layer $\boldsymbol{h} = \sigma(x\boldsymbol{m}_1+\boldsymbol{b})$, we set a proportion of it to zero, i.e., $\hat{\boldsymbol{h}} = \boldsymbol{h}\odot \hat{\boldsymbol{\epsilon}}$. 
+Finally, $f_{\cH}(x_i;\bth, \hat{\boldsymbol{\epsilon}})= \boldsymbol{m}_2^T\hat{\boldsymbol{h}}$, where $\bth = \{\boldsymbol{m}_1, \boldsymbol{m}_2, \boldsymbol{b}\}$.
+
+
+\section{Training with dropout}
+Training involves obtaining $\bth$ by minimizing 
+\begin{equation}
+	\cL_{dropout}(\bth) = \sum_{i = 1}^{N} \frac{1}{2}|y_i - f_{\cH}(x_i;\bth, \boldsymbol{\epsilon})|^2 + Reg(\bth)
+\end{equation}
+where $\boldsymbol{\epsilon}$ is a random variable as described above and $Reg(\bth)$ is a regularization term. 
+In each iteration, for obtaining the gradient of $\cL_{dropout}$ we use a sample $\hat{\cL}_{dropout}$ given as 
+\begin{equation}
+\hat{\cL}_{dropout}(\bth) = \sum_{i = 1}^{N} \frac{1}{2}|y_i - f_{\cH}(x_i;\bth, \hat{\boldsymbol{\epsilon}})|^2 + Reg(\bth)
+\end{equation}
+
+\section{Equivalence with variational inference}
+Note that 
+\begin{equation} \label{}
+\begin{split}
+f_{\cH}(x_i;\bth, \hat{\boldsymbol{\epsilon}}) &= \boldsymbol{m}_2^T\hat{\boldsymbol{h}}\\
+& = \boldsymbol{m}_2^T diag(\hat{\boldsymbol{\epsilon}})\boldsymbol{h}\\
+& = \hat{\boldsymbol{w}}_2^T\boldsymbol{h}\\
+& = f_{\cH}(x_i;\hat{\bw})
+\end{split}
+\end{equation}
+where $\hat{\bw} = \{\boldsymbol{m}_1, \hat{\boldsymbol{w}}_2, \boldsymbol{b}\}$ is a sample of the random variable $\bw = \{\boldsymbol{m}_1, \boldsymbol{w}_2, \boldsymbol{b}\}$, with $\boldsymbol{w}_2 = \boldsymbol{m}_2\odot \boldsymbol{\epsilon}$ and $\hat{\boldsymbol{w}}_2 = \boldsymbol{m}_2\odot \hat{\boldsymbol{\epsilon}}$. 
+We can therefore transfer the uncertainty from the feature space to the model weights. 
+Therefore, the training loss in each iteration is 
+\begin{equation}
+\hat{\cL}_{dropout}(\bth) = \sum_{i = 1}^{N} \frac{1}{2}|y_i - f_{\cH}(x_i;\hat{\bw})|^2 + Reg(\bth)
+\end{equation}
+which can also be written as
+\begin{equation}\label{dropout_loss}
+\hat{\cL}_{dropout}(\bth) = -\beta\sum_{i = 1}^{N} \log p(y_i|\hat{\bw},x_i,\cH) + Reg(\bth) 
+\end{equation}
+
+If we write $\bw=\boldsymbol{g}(\bth,\boldsymbol{\epsilon}) = \{\boldsymbol{m}_1, \boldsymbol{m}_2\odot \boldsymbol{\epsilon}, \boldsymbol{b}\}$, Eq.~\eqref{dropout_loss} becomes
+\begin{equation}\label{}
+\hat{\cL}_{dropout}(\bth) = -\beta\sum_{i = 1}^{N} \log p(y_i|\boldsymbol{g}(\bth,\hat{\boldsymbol{\epsilon}}),x_i,\cH) + Reg(\bth)
+\end{equation}
+Recall that the loss in Bayes by backprop is
+\begin{equation}\label{update}
+\hat{\cL}_{BBB}(\bth)= -\sum_{i=1}^{N} \log p(y_i|\boldsymbol{g}(\bth, \hat{\boldsymbol{\epsilon}}_i),x_i,\cH) + KL\left(q_{\bth}(\bw)||p(\bw|\cH)\right)
+\end{equation}
+
+\section{Summary}
+Training with dropout is equivalent to Bayes by backprop 
+\begin{enumerate}
+	\item with a difference in scale in the summation term
+	\item with reparametrization $\boldsymbol{g}(\bth,\boldsymbol{\epsilon}) = \{\boldsymbol{m}_1, \boldsymbol{m}_2\odot \boldsymbol{\epsilon}, \boldsymbol{b}\}$
+	\item with prior $p(\bw|\cH)$ and approximating distribution $q_{\bth}(\bw)$ such that $KL\left(q_{\bth}(\bw)||p(\bw|\cH)\right) = Reg(\bth) $.
+\end{enumerate}
+
+Two more notes:
+\begin{enumerate}
+	\item Other stochastic regularization techniques can be recovered with different reparametrizations and  $\boldsymbol{g}(\bth,\boldsymbol{\epsilon})$
+	\item after training with dropout the NN can be used exactly as a BNN (MC dropout).
+\end{enumerate}
+
+Overall, optimizing any NN with dropout is equivalent to \textit{a form} of variational inference. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%\section*{Appendix}
+\newpage	
+\printbibliography[heading=bibintoc,title={References}]
+	
+\end{document}

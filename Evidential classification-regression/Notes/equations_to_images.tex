@@ -1,0 +1,89 @@
+\documentclass[multi={mymath},border=1pt]{standalone}
+ \usepackage{amsmath}
+\newenvironment{mymath}{$\displaystyle}{$}
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+
+\begin{document}
+	
+	\begin{mymath}
+		p(\pazocal{D}|\mu) = \prod_{i=1}^{N}\mu^{y_i}(1-\mu)^{1-y_i}
+	\end{mymath}
+	
+	\begin{mymath}
+		\mu_{MLE} = \frac{N_H}{N}
+	\end{mymath}
+	
+	\begin{mymath}
+		\mu_{MLE} = \bar{y} = \frac{1}{N}\sum{y_i} \text{, } \ 
+		\sigma^2_{MLE} = \frac{1}{N}\sum{(y_i - \bar{y})^2}
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:posterior}
+		p(w|\pazocal{D}, \eta) = \frac{p(\pazocal{D}|w)p(w, \eta)}{p(\pazocal{D, \eta})}
+	\end{mymath}
+	
+	\begin{mymath}
+		p(w|\pazocal{D}, \eta) \propto p(\pazocal{D}|w)p(w, \eta)
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:prior:predictive}
+		p(y|\eta) = \int p(y|w)p(w|\eta) dw
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:prior:predictive:2}
+		prior \ predictive (y|\eta) = \int likelihood(y|w) \times prior(w|\eta) dw
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:prior:predictive:dirichlet}
+		p(y|\eta) = \int \prod_{j=1}^{K}\mu_j^{y_j} \times Dirichlet(\mu|\eta)d\mu
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:prior:predictive:nig}
+		p(y|\eta) = \int Gaussian(y|\mu, \sigma^2)\times NIG(\mu, \sigma^2|\eta)d\mu d\sigma^2
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:posterior:predictive}
+		p(y|\eta, \pazocal{D}) = \int p(y|w)p(w|\eta, \pazocal{D}) dw
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:posterior:predictive:2}
+		posterior \ predictive (y|\eta, \pazocal{D}) = \int likelihood(y|w) \times posterior(w|\eta, \pazocal{D}) dw
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:marginal:likelihood}
+		p(\pazocal{D}|\eta) = \int p(\pazocal{D}|w)p(w|\eta) dw
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:class:likelihood}
+		p(y|x, w) = Bernoulli(y|\mu_w(x))
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:regression:likelihood}
+		p(y|x, w) = Gaussian(y|\mu_w(x), \sigma^2_w(x) \text{ or }  \sigma^2)
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:posterior:predictive:mc}
+		p(y|x, \eta, \pazocal{D}) = \int p(y|x, w)p(w|\eta, \pazocal{D}) dw \approx 
+		\frac{1}{M}\sum_{j = 1}^{M}p(y|x, \hat{w}_j)
+	\end{mymath}
+	
+	\begin{mymath}
+		\eta_w(x) = \begin{bmatrix}
+			\gamma_w(x) \\ v_w(x) \\ \alpha_w(x) \\ \beta_w(x)
+		\end{bmatrix}
+		= \begin{bmatrix}
+			\gamma \\ v \\ \alpha \\ \beta
+		\end{bmatrix}
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:evidential:loss}
+		Loss(w) = \sum_{i=1}^{N} -log [p(y_i|\eta_w(x_i))]
+	\end{mymath}
+	
+	\begin{mymath}\label{eq:evidential:regularizer}
+		R(w) = \sum_{i=1}^{N}|y_i-\gamma_w(x_i)|(2\alpha_w(x_i) + v_w(x_i))
+	\end{mymath}
+	
+	
+\end{document}

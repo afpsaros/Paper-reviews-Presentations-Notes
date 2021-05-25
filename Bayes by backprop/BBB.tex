@@ -1,0 +1,164 @@
+\include{template}
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\bw}{\boldsymbol{w}}
+\newcommand{\bp}{\boldsymbol{p}}
+\newcommand{\bth}{\boldsymbol{\theta}}
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\cH}{\pazocal{H}}
+\newcommand{\cN}{\pazocal{N}}
+\newcommand{\cP}{\pazocal{P}}
+\newcommand{\cD}{\pazocal{D}}
+\newcommand{\cO}{\pazocal{O}}
+\newcommand{\cL}{\pazocal{L}}
+
+
+\setcounter{tocdepth}{3}
+\begin{document}
+	
+	\sloppy
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{center}	
+		\Large
+		\textbf{Bayes by backprop}\\
+		\large
+		Apostolos Psaros\\	
+%		\today
+%		July 10, 2020
+	\end{center}
+	\vskip 0.25in
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{\footnotesize
+%\setlength{\parskip}{0.1em}
+%\linespread{0.1}
+%\tableofcontents
+%\newpage}
+
+
+%\setlength{\parskip}{1em}
+%\linespread{1.6}
+\section{Introduction}\label{sec:introduction}
+Suppose we have only one weight $w$ and the posterior is approximated by $q_{\theta}(w)$, parametrized by $\theta$ (also one-dimensional).
+The ELBO is given as
+\begin{equation}\label{ELBO_2}
+ELBO(\theta) = \int \log\left(p(\cD|w,\cH)\right)q_{\theta}(w) dw - KL\left(q_{\theta}(w)||p(w|\cH)\right)
+\end{equation}
+For maximization of the ELBO we need to differentiate with respect to $\theta$. 
+In these notes, we will focus on the derivative of the integral term, i.e., 
+\begin{equation}\label{integral}
+I(\theta) = \frac{\partial}{\partial \theta} \int f(w)q_{\theta}(w)dw=
+\int f(w)\frac{\partial}{\partial \theta} q_{\theta}(w)dw
+\end{equation}
+where, for notation convenience, $\log\left(p(\cD|w,\cH)\right)$ is replaced by $f(w)$ and the fact that $f(w)$ is independent of $\theta$ has been used. 
+How can we approximate $I(\theta)$?
+
+\section{Monte Carlo estimators}\label{}
+In general, an integral can be approximated by a Monte Carlo (MC) estimator as
+\begin{equation}
+	\int f(w)p(w)dw \approx \frac{\sum_{j=1}^{M}f(\hat{w}_j)}{M}
+\end{equation}
+where $\{\hat{w}_j\}_{j=1}^{M}$ are $M$ samples from the distribution $p(w)$. 
+For $M = 1$ 
+\begin{equation}\label{MC}
+\int f(w)p(w)dw \approx f(\hat{w}), \ \hat{w} \sim p(w)
+\end{equation}
+This estimator is unbiased if the $M$ samples are independent and the estimator variance depends on $M$ and on the form of $f$. 
+
+\section{Integral approximation}
+Suppose that we approximate the first integral in Eq.~\eqref{integral} as
+\begin{equation}\label{}
+\int f(w)q_{\theta}(w)dw \approx f(\hat{w}), \ \hat{w} \sim q_{\theta}(w)
+\end{equation}
+Then we cannot take the derivative with respect to $\theta$. 
+On the other hand, if we use the second integral of Eq.~\eqref{integral}, then we cannot use the MC estimator of Eq.~\eqref{MC}. 
+
+One workaround is to express Eq.~\eqref{integral} equivalently as
+\begin{equation}\label{}
+I(\theta) = \int f(w)\frac{\partial \log q_{\theta}(w) }{\partial \theta} q_{\theta}(w)dw
+\end{equation}
+by using $\frac{\partial  }{\partial \theta} q_{\theta}(w)= \frac{\partial \log q_{\theta}(w) }{\partial \theta} q_{\theta}(w)$.
+Then we can approximate $I(\theta)$ by
+\begin{equation}\label{}
+\hat{I}(\theta) = f(\hat{w})\frac{\partial \log q_{\theta}(\hat{w}) }{\partial \theta}  , \ \hat{w} \sim q_{\theta}(w)
+\end{equation}
+This is called score function (or likelihood ratio) estimator. 
+
+Another estimator arises by using the reparametrization trick. 
+In general, we are trying to derive an MC estimator that involves drawing samples of $w$ from $q_{\theta}(w)$. 
+At the same time, we are trying to differentiate with respect to $\theta$. 
+In this regard, the reparametrization trick separates the randomness involved in the distribution $q_{\theta}(w)$ by the functional form of $q_{\theta}(w)$, which relates to $\theta$. 
+Differentiating and drawing samples become disentangled. 
+Specifically, for some transformation $w = g(\theta,\epsilon)$, where $\epsilon$ is the random part, we express $q_{\theta}(w)$ as
+\begin{equation}
+q_{\theta}(w)=
+\int  q_{\theta}(w, \epsilon)d\epsilon = \int  q_{\theta}(w| \epsilon)p(\epsilon)d\epsilon
+\end{equation}
+where $q_{\theta}(w| \epsilon) = \delta(w-g(\theta,\epsilon))$.
+Therefore,
+\begin{equation}
+\int f(w)q_{\theta}(w)dw = \int \int f(w) \delta(w-g(\theta,\epsilon))p(\epsilon)d\epsilon dw =\int f(g(\theta,\epsilon))p(\epsilon)d\epsilon 
+\end{equation}
+and
+\begin{equation}
+I(\theta) = \frac{\partial}{\partial \theta} \int f(w)q_{\theta}(w)dw=
+\int \frac{d}{dw}f(g(\theta,\epsilon)) \frac{\partial}{\partial \theta}g(\theta,\epsilon)p(\epsilon)d\epsilon 
+\end{equation}
+Then we can approximate $I(\theta)$ by
+\begin{equation}\label{}
+\hat{I}(\theta) = \frac{\partial}{\partial \theta}f(g(\theta,\hat{\epsilon}))=f'(g(\theta,\hat{\epsilon})) \frac{\partial}{\partial \theta}g(\theta,\hat{\epsilon})  , \ \hat{\epsilon} \sim p(\epsilon)
+\end{equation}
+This is known as path-wise estimator.
+
+\section{Comparison with MAP}
+In Bayes by backprop we optimize for $\theta$ and the update is given by
+\begin{equation}
+\Delta \theta = \frac{\partial}{\partial \theta}\log\left(p(\cD|g(\theta, \hat{\boldsymbol{\epsilon}}),\cH)\right) - \frac{\partial}{\partial \theta} KL\left(q_{\theta}(w)||p(w|\cH)\right)
+\end{equation}
+where $\hat{\boldsymbol{\epsilon}}$ is a vector of $N$ random samples from $p(\epsilon)$; one for each datapoint in $\cD$. 
+In MAP gradient descent we optimize for $w$ and the update is given by
+\begin{equation}
+	\Delta w = \frac{\partial}{\partial w}\log\left(p(\cD|w,\cH)\right) + \frac{\partial}{\partial w}\log\left(p(w|\cH)\right)
+\end{equation}
+Note that the MAP update can be obtained as a special case of Bayes by backprop. 
+Specifically, if we set $q_{\theta}(w) = \delta(w-\theta)$, then $g(\theta,\epsilon) = \theta$ and 
+\begin{equation} \label{}
+\begin{split}
+KL\left(q_{\theta}(w)||p(w|\cH)\right) &= \int \log(\frac{q_{\theta}(w)}{p(w|\cH)})q_{\theta}(w) dw\\
+& = \int \delta(w-\theta) \log \delta(w-\theta)dw - \int \delta(w-\theta) \log p(w|\cH)dw \\
+& = -\log p(\theta |\cH)
+\end{split}
+\end{equation}
+
+\section{Multi-dimensional case}
+The update for multi-dimensional $\bw$ and $\bth$ and Bayes by backprop SGD is given by
+\begin{equation}\label{}
+\Delta \bth=  \nabla_{\bth} \sum_{i\in S}^{} \frac{N}{|S|}\log p(y_i|\boldsymbol{g}(\bth, \hat{\boldsymbol{\epsilon}}_i),x_i,\cH) - \nabla_{\bth} KL\left(q_{\bth}(\bw)||p(\bw|\cH)\right)
+\end{equation}
+where $\hat{\boldsymbol{\epsilon}}_i$ is a sampled vector from $p(\boldsymbol{\epsilon})$.
+The update for MAP SGD is given by
+\begin{equation}\label{update_map}
+\Delta \bw=  \nabla_{\bw} \sum_{i\in S}^{} \frac{N}{|S|}\log p(y_i|\bw,x_i,\cH) + \nabla_{\bw} \log\left(p(\bw|\cH)\right)
+\end{equation}
+
+\section{Factorized Gaussian posterior}
+A common choice for $q_{\bth}(\bw)$ is a factorized Gaussian posterior given as
+\begin{equation}
+	q_{\bth}(\bw) = \cN(\bw|\boldsymbol{\mu}, diag(\boldsymbol{\sigma}^2)) = \prod_{j = 1}^{k} \cN(w_j|\mu_j, \sigma_j^2)
+\end{equation} 
+An approximation in which the variational distribution factorizes over the parameters is called mean-field approximation.
+The reparametrization for this case is given as
+\begin{equation}
+\bw = \boldsymbol{g}(\bth, \boldsymbol{\epsilon}) = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon}
+\end{equation} 
+and $\bth = \{\boldsymbol{\mu}, \boldsymbol{\sigma}\}$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%\section*{Appendix}
+\newpage	
+\printbibliography[heading=bibintoc,title={References}]
+	
+\end{document}

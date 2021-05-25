@@ -1,0 +1,628 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{brownlee2019snapshot}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Snapshot {{Ensemble Deep Learning Neural Network}} in
+  {{Python}}
+  ({{https://machinelearningmastery.com/snapshot-ensemble-deep-learning-neural-network/)}}}
+    \field{journaltitle}{Machine Learning Mastery}
+    \field{year}{2019}
+  \endentry
+
+  \entry{fort2020deep}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FS}{%
+         family={Fort},
+         familyi={F\bibinitperiod},
+         given={Stanislav},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Huiyi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LB}{%
+         family={Lakshminarayanan},
+         familyi={L\bibinitperiod},
+         given={Balaji},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FS+1}
+    \strng{fullhash}{FSHHLB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{eprint}
+    \verb 1912.02757
+    \endverb
+    \field{title}{Deep {{Ensembles}}: {{A Loss Landscape Perspective}}}
+    \field{journaltitle}{arXiv:1912.02757 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2020}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{garipov2018loss}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=GT}{%
+         family={Garipov},
+         familyi={G\bibinitperiod},
+         given={Timur},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=IP}{%
+         family={Izmailov},
+         familyi={I\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Podoprikhin},
+         familyi={P\bibinitperiod},
+         given={Dmitrii},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VDP}{%
+         family={Vetrov},
+         familyi={V\bibinitperiod},
+         given={Dmitry\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WAG}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Andrew\bibnamedelima G},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTIPPDVDPWAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Advances in {{Neural Information Processing Systems}}}
+    \field{pages}{8789\bibrangedash 8798}
+    \field{title}{Loss Surfaces, Mode Connectivity, and Fast Ensembling of
+  Dnns}
+    \field{year}{2018}
+  \endentry
+
+  \entry{gotmare2018using}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GA}{%
+         family={Gotmare},
+         familyi={G\bibinitperiod},
+         given={Akhilesh},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KNS}{%
+         family={Keskar},
+         familyi={K\bibinitperiod},
+         given={Nitish\bibnamedelima Shirish},
+         giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=XC}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Caiming},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Socher},
+         familyi={S\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GAKNSXCSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Using Mode Connectivity for Loss Landscape Analysis}
+    \field{journaltitle}{arXiv preprint arXiv:1806.06977}
+    \field{year}{2018}
+  \endentry
+
+  \entry{gur-ari2018gradient}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GG}{%
+         family={{Gur-Ari}},
+         familyi={G\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RDA}{%
+         family={Roberts},
+         familyi={R\bibinitperiod},
+         given={Daniel\bibnamedelima A},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DE}{%
+         family={Dyer},
+         familyi={D\bibinitperiod},
+         given={Ethan},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GG+1}
+    \strng{fullhash}{GGRDADE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Gradient Descent Happens in a Tiny Subspace}
+    \field{journaltitle}{arXiv preprint arXiv:1812.04754}
+    \field{year}{2018}
+  \endentry
+
+  \entry{huang2017snapshot}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HG}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Gao},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yixuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pleiss},
+         familyi={P\bibinitperiod},
+         given={Geoff},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhuang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=HJE}{%
+         family={Hopcroft},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={Kilian\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HG+1}
+    \strng{fullhash}{HGLYPGLZHJEWKQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 1704.00109
+    \endverb
+    \field{title}{Snapshot {{Ensembles}}: {{Train}} 1, Get {{M}} for Free}
+    \field{journaltitle}{arXiv:1704.00109 [cs]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{year}{2017}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{izmailov2019averaging}{article}{}
+    \name{author}{5}{}{%
+      {{hash=IP}{%
+         family={Izmailov},
+         familyi={I\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Podoprikhin},
+         familyi={P\bibinitperiod},
+         given={Dmitrii},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Garipov},
+         familyi={G\bibinitperiod},
+         given={Timur},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VD}{%
+         family={Vetrov},
+         familyi={V\bibinitperiod},
+         given={Dmitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WAG}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Andrew\bibnamedelima Gordon},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IP+1}
+    \strng{fullhash}{IPPDGTVDWAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{eprint}
+    \verb 1803.05407
+    \endverb
+    \field{title}{Averaging {{Weights Leads}} to {{Wider Optima}} and {{Better
+  Generalization}}}
+    \field{journaltitle}{arXiv:1803.05407 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2019}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{izmailov2019subspace}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=IP}{%
+         family={Izmailov},
+         familyi={I\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MWJ}{%
+         family={Maddox},
+         familyi={M\bibinitperiod},
+         given={Wesley\bibnamedelima J},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Kirichenko},
+         familyi={K\bibinitperiod},
+         given={Polina},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Garipov},
+         familyi={G\bibinitperiod},
+         given={Timur},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VD}{%
+         family={Vetrov},
+         familyi={V\bibinitperiod},
+         given={Dmitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WAG}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Andrew\bibnamedelima Gordon},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IP+1}
+    \strng{fullhash}{IPMWJKPGTVDWAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{{{arXiv}} Preprint {{arXiv}}:1907.07504}
+    \field{title}{Subspace Inference for {{Bayesian}} Deep Learning}
+    \field{year}{2019}
+  \endentry
+
+  \entry{li2018measuring}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chunyuan},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Farkhoor},
+         familyi={F\bibinitperiod},
+         given={Heerad},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Rosanne},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yosinski},
+         familyi={Y\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCFHLRYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1804.08838
+    \endverb
+    \field{title}{Measuring the {{Intrinsic Dimension}} of {{Objective
+  Landscapes}}}
+    \field{journaltitle}{arXiv:1804.08838 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2018}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{loshchilov2016sgdr}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LI}{%
+         family={Loshchilov},
+         familyi={L\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hutter},
+         familyi={H\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LIHF1}
+    \strng{fullhash}{LIHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Sgdr: {{Stochastic}} Gradient Descent with Warm Restarts}
+    \field{journaltitle}{arXiv preprint arXiv:1608.03983}
+    \field{year}{2016}
+  \endentry
+
+  \entry{maddox2019simple}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MWJ}{%
+         family={Maddox},
+         familyi={M\bibinitperiod},
+         given={Wesley\bibnamedelima J},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=IP}{%
+         family={Izmailov},
+         familyi={I\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Garipov},
+         familyi={G\bibinitperiod},
+         given={Timur},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VDP}{%
+         family={Vetrov},
+         familyi={V\bibinitperiod},
+         given={Dmitry\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WAG}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Andrew\bibnamedelima Gordon},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJ+1}
+    \strng{fullhash}{MWJIPGTVDPWAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Advances in {{Neural Information Processing Systems}}}
+    \field{pages}{13153\bibrangedash 13164}
+    \field{title}{A Simple Baseline for Bayesian Uncertainty in Deep Learning}
+    \field{year}{2019}
+  \endentry
+
+  \entry{mandt2017stochastic}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Mandt},
+         familyi={M\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HMD}{%
+         family={Hoffman},
+         familyi={H\bibinitperiod},
+         given={Matthew\bibnamedelima D},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BDM}{%
+         family={Blei},
+         familyi={B\bibinitperiod},
+         given={David\bibnamedelima M},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{JMLR. org}}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSHMDBDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{4873\bibrangedash 4907}
+    \field{title}{Stochastic Gradient Descent as Approximate Bayesian
+  Inference}
+    \field{volume}{18}
+    \field{journaltitle}{The Journal of Machine Learning Research}
+    \field{year}{2017}
+  \endentry
+
+  \entry{polyak1992acceleration}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PBT}{%
+         family={Polyak},
+         familyi={P\bibinitperiod},
+         given={Boris\bibnamedelima T},
+         giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=JAB}{%
+         family={Juditsky},
+         familyi={J\bibinitperiod},
+         given={Anatoli\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{SIAM}}%
+    }
+    \strng{namehash}{PBTJAB1}
+    \strng{fullhash}{PBTJAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{838\bibrangedash 855}
+    \field{title}{Acceleration of Stochastic Approximation by Averaging}
+    \field{volume}{30}
+    \field{journaltitle}{SIAM journal on control and optimization}
+    \field{year}{1992}
+  \endentry
+
+  \entry{smith2017cyclical}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SLN}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Leslie\bibnamedelima N},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE}}%
+    }
+    \strng{namehash}{SLN1}
+    \strng{fullhash}{SLN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{2017 {{IEEE Winter Conference}} on {{Applications}} of
+  {{Computer Vision}} ({{WACV}})}
+    \field{pages}{464\bibrangedash 472}
+    \field{title}{Cyclical Learning Rates for Training Neural Networks}
+    \field{year}{2017}
+  \endentry
+
+  \entry{xie2013horizontal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=XJ}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Jingjing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Zhang},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XJ+1}
+    \strng{fullhash}{XJXBCZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{Horizontal and Vertical Ensemble with Deep Representation for
+  Classification}
+    \field{journaltitle}{arXiv preprint arXiv:1306.2759}
+    \field{year}{2013}
+  \endentry
+\enddatalist
+\endinput

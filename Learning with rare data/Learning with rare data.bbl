@@ -1,0 +1,95 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{rotskoff2020learning}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RGM}{%
+         family={Rotskoff},
+         familyi={R\bibinitperiod},
+         given={Grant\bibnamedelima M},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=VE}{%
+         family={{Vanden-Eijnden}},
+         familyi={V\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RGMVE1}
+    \strng{fullhash}{RGMVE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Learning with Rare Data: {{Using}} Active Importance Sampling
+  to Optimize Objectives Dominated by Rare Events}
+    \field{journaltitle}{arXiv preprint arXiv:2008.06334}
+    \field{year}{2020}
+  \endentry
+
+  \entry{thiede2016eigenvector}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TEH}{%
+         family={Thiede},
+         familyi={T\bibinitperiod},
+         given={Erik\bibnamedelima H},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=VKB}{%
+         family={Van\bibnamedelima Koten},
+         familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weare},
+         familyi={W\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DAR}{%
+         family={Dinner},
+         familyi={D\bibinitperiod},
+         given={Aaron\bibnamedelima R},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{AIP Publishing LLC}}%
+    }
+    \strng{namehash}{TEH+1}
+    \strng{fullhash}{TEHVKBWJDAR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{pages}{084115}
+    \field{title}{Eigenvector Method for Umbrella Sampling Enables Error
+  Analysis}
+    \field{volume}{145}
+    \field{journaltitle}{The Journal of chemical physics}
+    \field{year}{2016}
+  \endentry
+\enddatalist
+\endinput

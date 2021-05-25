@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Fast convex pruning of deep neural networks.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 48 items.
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: Fast_convex_pruning_of_deep_neural_networks-blx.bib
+Database file #2: refs.bib
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 5 entries,
+            6393 wiz_defined-function locations,
+            1226 strings with 9846 characters,
+and the built_in function-call counts, 32558 in all, are:
+= -- 2299
+> -- 675
+< -- 204
++ -- 936
+- -- 268
+* -- 2398
+:= -- 3723
+add.period$ -- 0
+call.type$ -- 5
+change.case$ -- 110
+chr.to.int$ -- 42
+cite$ -- 8
+duplicate$ -- 3513
+empty$ -- 2674
+format.name$ -- 358
+if$ -- 6659
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 0
+newline$ -- 185
+num.names$ -- 238
+pop$ -- 1608
+preamble$ -- 1
+purify$ -- 140
+quote$ -- 0
+skip$ -- 969
+stack$ -- 0
+substring$ -- 3666
+swap$ -- 796
+text.length$ -- 171
+text.prefix$ -- 4
+top$ -- 1
+type$ -- 158
+warning$ -- 0
+while$ -- 557
+width$ -- 0
+write$ -- 181

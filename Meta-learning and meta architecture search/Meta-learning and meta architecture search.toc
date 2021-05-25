@@ -1,0 +1,57 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Motivation}{2}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}General meta-learning formulation}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Placing 4 meta-learning techniques under the general formulation}{4}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}NAS-DARTS}{4}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Prior optimization - Empirical Bayes}{4}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}MAML}{5}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Loss function meta-learning}{5}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Making task-specific techniques (Problem 1) be task-agnostic (Problem 2)}{6}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Addressing Problem (3)}{7}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Bayesian way for addressing Problem (3)}{8}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Bayesian NAS}{8}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Meta architecture search}{9}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}General algorithms}{9}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Gradient of meta-objective $\pazocal {L}_1$ with respect to $x$}{11}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}NAS-DARTS}{11}{subsection.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Prior optimization - Empirical Bayes}{12}{subsection.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3}MAML}{12}{subsection.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4}Loss function meta-learning}{13}{subsection.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Optimization comments}{13}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Benchmark regression tasks}{14}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}1D x / 1D y}{14}{subsection.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.1.1}Sinusoidal functions with varying phase shifts}{14}{subsubsection.10.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.1.2}Tanh + sinusoidal functions with varying sharpness}{14}{subsubsection.10.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}2D x / 1D y}{15}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.2.1}Product of sines with varying frequency}{15}{subsubsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3}2D x / 2D y}{15}{subsection.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.3.1}Product of sines and cosines with varying frequencies}{15}{subsubsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{17}{figure.caption.6}%

@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Evidential classification-regression.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: Evidential_classification-regression-blx.bib
+Database file #2: refs.bib
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 4 entries,
+            6393 wiz_defined-function locations,
+            1215 strings with 9434 characters,
+and the built_in function-call counts, 20174 in all, are:
+= -- 1333
+> -- 413
+< -- 103
++ -- 502
+- -- 165
+* -- 1507
+:= -- 2346
+add.period$ -- 0
+call.type$ -- 4
+change.case$ -- 39
+chr.to.int$ -- 42
+cite$ -- 6
+duplicate$ -- 2046
+empty$ -- 1791
+format.name$ -- 217
+if$ -- 4155
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 0
+newline$ -- 119
+num.names$ -- 134
+pop$ -- 1136
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 621
+stack$ -- 0
+substring$ -- 2253
+swap$ -- 476
+text.length$ -- 120
+text.prefix$ -- 3
+top$ -- 1
+type$ -- 124
+warning$ -- 0
+while$ -- 339
+width$ -- 0
+write$ -- 116

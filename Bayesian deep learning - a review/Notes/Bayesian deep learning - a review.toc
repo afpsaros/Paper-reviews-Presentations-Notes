@@ -1,0 +1,123 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Bayesian hierarchical modeling}{2}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.1}Bayesian model average}{2}{subsubsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.2}Maximum a posteriori (MAP) estimate}{4}{subsubsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.3}Hyperparameters and hyperpriors}{5}{subsubsection.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Motivation for Bayesian neural networks}{6}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.1}Calibration in the classification setting}{6}{subsubsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.2.1.1}Reliability diagram:}{6}{paragraph.1.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.2.1.2}Other metrics:}{7}{paragraph.1.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.2.1.3}Post-hoc recalibration:}{7}{paragraph.1.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.2.1.4}Calibration via epistemic uncertainty:}{8}{paragraph.1.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.2}Calibration in the regression setting}{9}{subsubsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.3}Accuracy}{10}{subsubsection.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Components of Bayesian deep learning}{10}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Model building}{10}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Stochastic NNs and BNNs}{10}{subsubsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Gaussian process limit}{12}{subsubsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Parameter priors}{14}{subsubsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.3.1}Noninformative/objective priors:}{14}{paragraph.2.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.3.2}Weakly informative priors:}{14}{paragraph.2.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.4}Functional priors}{15}{subsubsection.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Approximate inference}{17}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Monte Carlo estimation}{18}{subsubsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Rejection and importance sampling}{19}{subsubsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Markov chain sampling}{20}{subsubsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.1}Markov chains:}{20}{paragraph.2.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.2}Gibbs sampling:}{21}{paragraph.2.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.3}Metropolis algorithm:}{21}{paragraph.2.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.4}The stochastic dynamics method:}{22}{paragraph.2.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.5}Hybrid Monte Carlo:}{23}{paragraph.2.2.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.6}Stochastic gradient Langevin dynamics:}{23}{paragraph.2.2.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.4}Laplace approximation}{24}{subsubsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.5}Variational inference}{25}{subsubsection.2.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.5.1}Computational efficiency and tractability:}{26}{paragraph.2.2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.5.2}MC estimators in VI:}{26}{paragraph.2.2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.5.3}Data sub-sampling in VI:}{27}{paragraph.2.2.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.5.4}Historical note:}{27}{paragraph.2.2.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.5.5}Stochastic regularization techniques (dropout):}{27}{paragraph.2.2.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.6}Deep ensembles}{28}{subsubsection.2.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.7}SGD-based techniques}{29}{subsubsection.2.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Model comparison}{30}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Hyperparameters: optimize, sample or integrate out upfront?}{30}{subsubsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Evidence framework (empirical Bayes)}{31}{subsubsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.1}Evidence in conjunction with Laplace approximation:}{32}{paragraph.2.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.2}Occam's razor:}{32}{paragraph.2.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.3}Effective dimensionality and generalization:}{34}{paragraph.2.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.4}Rethinking parameter counting:}{36}{paragraph.2.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.5}Should we optimize parameters and hyperparameters together in Laplace approximation?}{37}{paragraph.2.3.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.6}Model comparison:}{38}{paragraph.2.3.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.2.7}Evidence in conjunction with variational inference:}{38}{paragraph.2.3.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Cross-validation}{38}{subsubsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.3.3.1}Relation with evidence:}{38}{paragraph.2.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.4}Alternating between approximate inference and hyperparameter optimization}{40}{subsubsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Uncertainty quality}{40}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}In-domain uncertainty}{41}{subsubsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}In-between uncertainty}{42}{subsubsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.3}Recalibration of regression BNNs}{42}{subsubsection.2.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.4}Diagnostic tools}{43}{subsubsection.2.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.4.4.1}Calibration:}{43}{paragraph.2.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.4.4.2}Sharpness:}{43}{paragraph.2.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{44}{equation.2.70}%

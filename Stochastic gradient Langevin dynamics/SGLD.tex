@@ -1,0 +1,69 @@
+\include{template}
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\bw}{\boldsymbol{w}}
+\newcommand{\bp}{\boldsymbol{p}}
+\newcommand{\bth}{\boldsymbol{\theta}}
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\cH}{\pazocal{H}}
+\newcommand{\cN}{\pazocal{N}}
+\newcommand{\cP}{\pazocal{P}}
+\newcommand{\cD}{\pazocal{D}}
+\newcommand{\cO}{\pazocal{O}}
+\newcommand{\cL}{\pazocal{L}}
+
+
+\setcounter{tocdepth}{3}
+\begin{document}
+	
+	\sloppy
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{center}	
+		\Large
+		\textbf{Stochastic gradient Langevin dynamics}\\
+		\large
+		Apostolos Psaros\\	
+%		\today
+%		July 10, 2020
+	\end{center}
+	\vskip 0.25in
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{\footnotesize
+%\setlength{\parskip}{0.1em}
+%\linespread{0.1}
+%\tableofcontents
+%\newpage}
+
+
+%\setlength{\parskip}{1em}
+%\linespread{1.6}
+\section{SGD-like updates}\label{sec:introduction}
+The Langevin MC method is an HMC method with $T=1$; i.e., with a single leapfrog iteration. 
+In fact, in the uncorrected version of Langevin MC (all candidates accepted) there is no need of the two-step procedure of HMC and no need for explicitly representing the momentum at all; one stochastic differential equation (Langevin equation) is used for picking new values of $\bw$. 
+For the $t$-th state, the Langevin equation is given as (see Eq.~(5.28) in \cite{neal1993probabilistic})
+\begin{equation}\label{update_1}
+	\bw^{(t+1)} - \bw^{(t)} = -\frac{\lambda^2}{2} \nabla_{\bw} \cL(\bw^{(t)}) + \lambda \boldsymbol{n}
+\end{equation}
+where $\boldsymbol{n} = [n_1,\dots,n_k]^T$ and $n_j \sim \cN(0, 1)$ for all $j$. 
+Also, recall that $\cL(\bw^{(t)}) = -\log p(\cD|\bw^{(t)},\cH) - \log p(\bw^{(t)}|\cH)$. 
+By writing $\lambda = \sqrt{\epsilon}$, Eq.~\eqref{update_1} becomes
+\begin{equation}\label{update_2}
+\bw^{(t+1)} - \bw^{(t)}= \frac{\epsilon}{2} \left[\nabla_{\bw} \sum_{i=1}^{N}\log p(y_i|\bw^{(t)},x_i,\cH) + \nabla_{\bw}\log p(\bw^{(t)}|\cH)\right] + \boldsymbol{\eta}
+\end{equation}
+where $\boldsymbol{\eta} = [\eta_1,\dots,\eta_k]^T$ and $\eta_j \sim \cN(0, \epsilon)$ for all $j$. 
+
+If at each iteration only a subset (mini-batch) of the available data is used, Eq.~\eqref{update_2} becomes (\cite{welling2011bayesian})
+\begin{equation}\label{update_3}
+\bw^{(t+1)} - \bw^{(t)}= \frac{\epsilon}{2} \left[\nabla_{\bw} \sum_{i\in S}^{} \frac{N}{|S|}\log p(y_i|\bw^{(t)},x_i,\cH) + \nabla_{\bw}\log p(\bw^{(t)}|\cH)\right] + \boldsymbol{\eta}
+\end{equation}
+This is the same as the SGD update step with added Gaussian noise. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%\section*{Appendix}
+\newpage	
+\printbibliography[heading=bibintoc,title={References}]
+	
+\end{document}

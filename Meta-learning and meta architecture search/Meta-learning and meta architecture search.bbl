@@ -1,0 +1,552 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{barron2019general}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BJT}{%
+         family={Barron},
+         familyi={B\bibinitperiod},
+         given={Jonathan\bibnamedelima T},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJT1}
+    \strng{fullhash}{BJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the {{IEEE Conference}} on {{Computer
+  Vision}} and {{Pattern Recognition}}}
+    \field{pages}{4331\bibrangedash 4339}
+    \field{title}{A General and Adaptive Robust Loss Function}
+    \field{year}{2019}
+  \endentry
+
+  \entry{bechtle2020metalearning}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BS}{%
+         family={Bechtle},
+         familyi={B\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Molchanov},
+         familyi={M\bibinitperiod},
+         given={Artem},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Chebotar},
+         familyi={C\bibinitperiod},
+         given={Yevgen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Grefenstette},
+         familyi={G\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Righetti},
+         familyi={R\bibinitperiod},
+         given={Ludovic},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sukhatme},
+         familyi={S\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Meier},
+         familyi={M\bibinitperiod},
+         given={Franziska},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSMACYGERLSGMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1906.05374
+    \endverb
+    \field{title}{Meta-{{Learning}} via {{Learned Loss}}}
+    \field{journaltitle}{arXiv:1906.05374 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2020}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{elsken2020metalearning}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=ET}{%
+         family={Elsken},
+         familyi={E\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Staffler},
+         familyi={S\bibinitperiod},
+         given={Benedikt},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Metzen},
+         familyi={M\bibinitperiod},
+         given={Jan\bibnamedelima Hendrik},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hutter},
+         familyi={H\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ET+1}
+    \strng{fullhash}{ETSBMJHHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF Conference}} on
+  {{Computer Vision}} and {{Pattern Recognition}}}
+    \field{pages}{12365\bibrangedash 12375}
+    \field{title}{Meta-{{Learning}} of {{Neural Architectures}} for
+  {{Few}}-{{Shot Learning}}}
+    \field{year}{2020}
+  \endentry
+
+  \entry{finn2017modelagnostic}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FC}{%
+         family={Finn},
+         familyi={F\bibinitperiod},
+         given={Chelsea},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Abbeel},
+         familyi={A\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FC+1}
+    \strng{fullhash}{FCAPLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{eprint}
+    \verb 1703.03400
+    \endverb
+    \field{title}{Model-Agnostic Meta-Learning for Fast Adaptation of Deep
+  Networks}
+    \field{journaltitle}{arXiv preprint arXiv:1703.03400}
+    \field{eprinttype}{arxiv}
+    \field{year}{2017}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{kim2018autometa}{article}{}
+    \name{author}{9}{}{%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jaehong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Sangyeul},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Sungwan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cha},
+         familyi={C\bibinitperiod},
+         given={Moonsu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jung\bibnamedelima Kwon},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Youngduck},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Yongseok},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CDY}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Dong-Yeon},
+         giveni={D\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jiwon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJ+1}
+    \strng{fullhash}{KJLSKSCMLJKCYCYCDYKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{eprint}
+    \verb 1806.06927
+    \endverb
+    \field{title}{Auto-Meta: {{Automated}} Gradient Based Meta Learner Search}
+    \field{journaltitle}{arXiv preprint arXiv:1806.06927}
+    \field{eprinttype}{arxiv}
+    \field{year}{2018}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{lian2019fast}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=LD}{%
+         family={Lian},
+         familyi={L\bibinitperiod},
+         given={Dongze},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Yin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XY}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Yintao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yanxiong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Leyu},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZP}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Peilin},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Junzhou},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Shenghua},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LD+1}
+    \strng{fullhash}{LDZYXYLYLLZPHJGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{International {{Conference}} on {{Learning
+  Representations}}}
+    \field{title}{Towards {{Fast Adaptation}} of {{Neural Architectures}} with
+  {{Meta Learning}}}
+    \field{year}{2019}
+  \endentry
+
+  \entry{liu2019darts}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Hanxiao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Yiming},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LH+1}
+    \strng{fullhash}{LHSKYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1806.09055
+    \endverb
+    \field{title}{{{DARTS}}: {{Differentiable Architecture Search}}}
+    \field{journaltitle}{arXiv:1806.09055 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2019}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{nichol2018firstorder}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NA}{%
+         family={Nichol},
+         familyi={N\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Achiam},
+         familyi={A\bibinitperiod},
+         given={Joshua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NA+1}
+    \strng{fullhash}{NAAJSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{eprint}
+    \verb 1803.02999
+    \endverb
+    \field{title}{On {{First}}-{{Order Meta}}-{{Learning Algorithms}}}
+    \field{journaltitle}{arXiv:1803.02999 [cs]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{year}{2018}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{rajeswaran2019metalearning}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RA}{%
+         family={Rajeswaran},
+         familyi={R\bibinitperiod},
+         given={Aravind},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Finn},
+         familyi={F\bibinitperiod},
+         given={Chelsea},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kakade},
+         familyi={K\bibinitperiod},
+         given={Sham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA+1}
+    \strng{fullhash}{RAFCKSLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb 1909.04630
+    \endverb
+    \field{title}{Meta-{{Learning}} with {{Implicit Gradients}}}
+    \field{journaltitle}{arXiv:1909.04630 [cs, math, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, math, stat}
+    \field{year}{2019}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{shaw2019meta}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SA}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Albert},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Weiyang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Le},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA+1}
+    \strng{fullhash}{SAWWLWSLDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in {{Neural Information Processing Systems}}}
+    \field{pages}{11227\bibrangedash 11237}
+    \field{title}{Meta Architecture Search}
+    \field{year}{2019}
+  \endentry
+
+  \entry{zhou2019bayesnas}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZH}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Hongpeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YM}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Minghao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZH+1}
+    \strng{fullhash}{ZHYMWJPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{eprint}
+    \verb 1905.04919
+    \endverb
+    \field{title}{{{BayesNAS}}: {{A Bayesian Approach}} for {{Neural
+  Architecture Search}}}
+    \field{journaltitle}{arXiv:1905.04919 [cs, stat]}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{year}{2019}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+\enddatalist
+\endinput
