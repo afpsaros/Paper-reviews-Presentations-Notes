@@ -1,6 +1,6 @@
-# Tutorials-Presentations-Notes
+# Paper reviews-Presentations-Notes
 
-In this repository you can find paper reviews, tutorials, presentations and notes on various topics in machine learning.
+In this repository you can find my paper reviews, presentations and notes on various topics in machine learning.
 Presentations are in the form of PPT files and notes in the form of PDF files (disregard the LaTeX files).
 
 * Bayes by backprop (notes)
@@ -46,5 +46,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 * SGD-based Bayesian ensembling approaches (notes)
 
 * Stochastic gradient Langevin dynamics (notes)
+
+  *Welling, M. and Teh, Y.W., 2011. Bayesian learning via stochastic gradient Langevin dynamics. In Proceedings of the 28th international conference on machine learning (ICML-11) (pp. 681-688).*
 
  
