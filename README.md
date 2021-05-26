@@ -5,7 +5,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
 * Notes on Bayes by backprop
 
-*Blundell, C., Cornebise, J., Kavukcuoglu, K. and Wierstra, D., 2015, June. Weight uncertainty in neural network. In International Conference on Machine Learning (pp. 1613-1622). PMLR.*
+  *Blundell, C., Cornebise, J., Kavukcuoglu, K. and Wierstra, D., 2015, June. Weight uncertainty in neural network. In International Conference on Machine Learning (pp. 1613-1622). PMLR.*
 
 * Notes on dropout  
 
