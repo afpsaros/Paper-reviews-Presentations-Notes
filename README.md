@@ -31,7 +31,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Rotskoff, G.M., Mitchell, A.R. and Vanden-Eijnden, E., 2020. Active Importance Sampling for Variational Objectives Dominated by Rare Events: Consequences for Optimization and Generalization. arXiv preprint arXiv:2008.06334.*
   
-* Meta-learning and meta architecture search (notes)
+* Meta-learning and meta architecture search (15-page notes)
 
   *Shaw, A., Wei, W., Liu, W., Song, L. and Dai, B., 2018. Meta architecture search. arXiv preprint arXiv:1812.09584.*
   
@@ -39,7 +39,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Bechtle, S., Molchanov, A., Chebotar, Y., Grefenstette, E., Righetti, L., Sukhatme, G. and Meier, F., 2021, January. Meta learning via learned loss. In 2020 25th International Conference on Pattern Recognition (ICPR) (pp. 4161-4168). IEEE.*
   
-* Regression recalibration (short notes)
+* Regression recalibration (notes)
 
   *Kuleshov, V., Fenner, N. and Ermon, S., 2018, July. Accurate uncertainties for deep learning using calibrated regression. In International Conference on Machine Learning (pp. 2796-2804). PMLR.*
   
