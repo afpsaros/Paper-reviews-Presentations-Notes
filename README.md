@@ -1,6 +1,6 @@
 # Paper reviews-Presentations-Notes
 
-In this repository you can find my paper reviews, presentations and notes on various topics in machine learning.
+In this repository you can find my paper reviews, presentations and notes on various topics in machine learning and stochastic dynamics.
 Presentations are in the form of PPT files and notes in the form of PDF files (disregard the LaTeX files).
 
 * Bayes by backprop (notes)
