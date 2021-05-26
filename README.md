@@ -17,7 +17,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Gal, Y. and Ghahramani, Z., 2016, June. Dropout as a bayesian approximation: Representing model uncertainty in deep learning. In international conference on machine learning (pp. 1050-1059). PMLR.*
 
-* Evidential classification and regression (paper review - notes - presentation). See also video recording at https://drive.google.com/file/d/1PBPaJliVKws15rO8YmSY_6QB6IhTixnc/view?usp=sharing
+* Evidential classification and regression (paper review - notes - presentation). See also video recording at (starts at 0:02:15) https://drive.google.com/file/d/1PBPaJliVKws15rO8YmSY_6QB6IhTixnc/view?usp=sharing
 
   *Sensoy, M., Kaplan, L. and Kandemir, M., 2018. Evidential deep learning to quantify classification uncertainty. arXiv preprint arXiv:1806.01768.*
 
@@ -38,6 +38,10 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 * Meta-learning via learned loss (paper review - notes)
 
   *Bechtle, S., Molchanov, A., Chebotar, Y., Grefenstette, E., Righetti, L., Sukhatme, G. and Meier, F., 2021, January. Meta learning via learned loss. In 2020 25th International Conference on Pattern Recognition (ICPR) (pp. 4161-4168). IEEE.*
+  
+* Path integrals and sparse representations in stochastic engineering dynamics (presentation of my work at Columbia). See also video recording at (starts at 1:19:50) https://drive.google.com/file/d/1nOMChXS-L6rj-gSMZ_Mcdngr9PkaTJr9/view?usp=sharing
+  
+* Quadratic approximation of the Wiener path integral for MDOF nonlinear oscillators (presentation of my paper). See also video recording at https://drive.google.com/file/d/1A3fAhNS-e-J1cVB_ZM8Wx7WNDG1WYT0R/view?usp=sharing
   
 * Regression recalibration (notes)
 
