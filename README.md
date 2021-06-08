@@ -7,7 +7,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Blundell, C., Cornebise, J., Kavukcuoglu, K. and Wierstra, D., 2015, June. Weight uncertainty in neural network. In International Conference on Machine Learning (pp. 1613-1622). PMLR.*
   
-* Bayesian deep learning: A review (50-page notes and presentation). See also video recording https://drive.google.com/file/d/1FTYpxZ8CWuR7Hn2WF1Sjk6pfUXq2jt6a/view?usp=sharing
+* Bayesian deep learning: A review (50-page notes and presentation). See also video recording: https://bit.ly/2ScSGq8
   
 * Deep ensembles loss landscape (paper review - notes)
 
@@ -17,7 +17,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Gal, Y. and Ghahramani, Z., 2016, June. Dropout as a bayesian approximation: Representing model uncertainty in deep learning. In international conference on machine learning (pp. 1050-1059). PMLR.*
 
-* Evidential classification and regression (paper review - notes - presentation). See also video recording (starts at 0:02:15) https://drive.google.com/file/d/1PBPaJliVKws15rO8YmSY_6QB6IhTixnc/view?usp=sharing
+* Evidential classification and regression (paper review - notes - presentation). See also video recording (starts at 0:02:15): https://bit.ly/2ScSBTm
 
   *Sensoy, M., Kaplan, L. and Kandemir, M., 2018. Evidential deep learning to quantify classification uncertainty. arXiv preprint arXiv:1806.01768.*
 
@@ -39,9 +39,9 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Bechtle, S., Molchanov, A., Chebotar, Y., Grefenstette, E., Righetti, L., Sukhatme, G. and Meier, F., 2021, January. Meta learning via learned loss. In 2020 25th International Conference on Pattern Recognition (ICPR) (pp. 4161-4168). IEEE.*
   
-* Path integrals and sparse representations in stochastic engineering dynamics (presentation of my work at Columbia). See also video recording (starts at 1:19:50) https://drive.google.com/file/d/1nOMChXS-L6rj-gSMZ_Mcdngr9PkaTJr9/view?usp=sharing
+* Path integrals and sparse representations in stochastic engineering dynamics (presentation of my work at Columbia). See also video recording (starts at 1:19:50): https://bit.ly/3ixVrwZ
   
-* Quadratic approximation of the Wiener path integral for MDOF nonlinear oscillators (presentation of my paper). See also video recording https://drive.google.com/file/d/1A3fAhNS-e-J1cVB_ZM8Wx7WNDG1WYT0R/view?usp=sharing
+* Quadratic approximation of the Wiener path integral for MDOF nonlinear oscillators (presentation of my paper). See also video recording: https://bit.ly/3x11ZrI
   
 * Regression recalibration (notes)
 
