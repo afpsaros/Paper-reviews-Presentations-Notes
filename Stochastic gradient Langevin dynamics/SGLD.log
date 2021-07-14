@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.3)  25 MAY 2021 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.3)  8 JUL 2021 11:54
 entering extended mode
 **./SGLD.tex
 (SGLD.tex
@@ -1070,7 +1070,7 @@ Package logreq Info: Writing requests to 'SGLD.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  21914 strings out of 479321
- 369045 string characters out of 2855630
+ 369125 string characters out of 2855630
  909334 words of memory out of 3000000
  39044 multiletter control sequences out of 15000+600000
  412025 words of font info for 58 fonts, out of 8000000 for 9000
