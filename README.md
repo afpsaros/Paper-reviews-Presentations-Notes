@@ -7,7 +7,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Blundell, C., Cornebise, J., Kavukcuoglu, K. and Wierstra, D., 2015, June. Weight uncertainty in neural network. In International Conference on Machine Learning (pp. 1613-1622). PMLR.*
   
-* Bayesian deep learning: A review (50-page notes and presentation). See also video recording: https://bit.ly/2ScSGq8
+* Bayesian deep learning: A review (50-page notes and presentation). See also video recording: [https://bit.ly/2ScSGq8](https://bit.ly/47NRZ7b)
   
 * Deep ensembles loss landscape (paper review - notes)
 
