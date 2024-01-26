@@ -17,7 +17,7 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Gal, Y. and Ghahramani, Z., 2016, June. Dropout as a bayesian approximation: Representing model uncertainty in deep learning. In international conference on machine learning (pp. 1050-1059). PMLR.*
 
-* Evidential classification and regression (paper review - notes - presentation). See also video recording (starts at 0:02:15): https://bit.ly/2ScSBTm
+* Evidential classification and regression (paper review - notes - presentation). See also video recording (starts at 0:02:15): [https://bit.ly/2ScSBTm](https://bit.ly/47TEG5f)
 
   *Sensoy, M., Kaplan, L. and Kandemir, M., 2018. Evidential deep learning to quantify classification uncertainty. arXiv preprint arXiv:1806.01768.*
 
