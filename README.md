@@ -39,9 +39,9 @@ Presentations are in the form of PPT files and notes in the form of PDF files (d
 
   *Bechtle, S., Molchanov, A., Chebotar, Y., Grefenstette, E., Righetti, L., Sukhatme, G. and Meier, F., 2021, January. Meta learning via learned loss. In 2020 25th International Conference on Pattern Recognition (ICPR) (pp. 4161-4168). IEEE.*
   
-* Path integrals and sparse representations in stochastic engineering dynamics (presentation of my work at Columbia). See also video recording (starts at 1:19:50): https://bit.ly/3ixVrwZ
+* Path integrals and sparse representations in stochastic engineering dynamics (presentation of my work at Columbia). See also video recording (starts at 1:19:50): [https://bit.ly/3ixVrwZ](https://bit.ly/3vQK5wF)
   
-* Quadratic approximation of the Wiener path integral for MDOF nonlinear oscillators (presentation of my paper). See also video recording: https://bit.ly/3x11ZrI
+* Quadratic approximation of the Wiener path integral for MDOF nonlinear oscillators (presentation of my paper). See also video recording: [https://bit.ly/3x11ZrI](https://bit.ly/3HG6hMp)
   
 * Regression recalibration (notes)
 
